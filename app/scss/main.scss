@@ -1,13 +1,30 @@
+@import "./_mixins/keyframe";
 @import "vars";
 @import "fonts";
 @import "./template/extand.scss";
 
+html {
+  font-size: 18px;
+
+  @media (max-width: 991px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: normal;
-	font-family: $default-font, sans-serif;
-	overflow-x: hidden;
-	padding: 20px;
+  font-size: 1rem;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: $default-font, sans-serif;
+  overflow-x: hidden;
+  padding: 20px;
+
+  @media (max-width: 568px) {
+    padding: 20px 0 20px;
+  }
 }
