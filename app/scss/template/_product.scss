@@ -1,6 +1,10 @@
 .product {
-  padding: 160px 0 100px;
+  padding: 8.8889rem 0 5.5556rem;
   background: url(../img/product-bg.png) no-repeat center center / cover;
+
+  @media (max-width: 991px) {
+    padding: 4.8889rem 0 4.5556rem;
+  }
 
   .site-title {
     text-align: center;
@@ -9,7 +13,7 @@
   &__info {
     p {
       font-family: ProximaNova;
-      font-size: 17px;
+      font-size: 0.9444rem;
       font-weight: 300;
       line-height: 1.88;
       text-align: center;
@@ -18,7 +22,7 @@
       margin: 60px 0 0;
     }
 
-    margin-bottom: 80px;
+    margin-bottom: 4.4444rem;
   }
 
   &__grid {
@@ -26,13 +30,24 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     align-items: flex-end;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 30px;
+    }
+
+    @media (max-width: 470px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__image {
     position: relative;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     padding-bottom: 5px;
+    min-height: 217px;
 
     img {
       z-index: 1;
@@ -54,18 +69,16 @@
     max-width: 220px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 2.2222rem;
+    font-family: "ProximaNova-Light", sans-serif;
 
     a {
-      font-family: ProximaNova;
-      font-size: 19px;
+      font-size: 1.0556rem;
       font-weight: 300;
       line-height: 1.37;
       color: $white-two;
       text-decoration: none;
       border-bottom: 2px solid $white-two;
-      
-      
 
       &:hover {
         border-bottom: none;

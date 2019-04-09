@@ -1,0 +1,49 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  border: solid 3px $white;
+  background-color: $white;
+  padding: 0 17px;
+  width: 100%;
+  font-family: ProximaNova;
+  font-size: 0.9444rem;
+  line-height: 2;
+  color: $dark-grey-blue;
+}
+
+.file_upload {
+  position: relative;
+  font-family: ProximaNova;
+  font-size: 0.9444rem;
+  line-height: 2;
+  color: $white;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 22px;
+    height: 24px;
+    background: url(../../img/layer-28.png) no-repeat left center;
+  }
+  padding-left: 27px;
+
+  input[type="file"] {
+    display: none;
+  }
+}

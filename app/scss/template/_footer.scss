@@ -1,0 +1,128 @@
+.site-footer {
+  display: grid;
+  grid-template-areas: "info map";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  background-color: $dark-indigo;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: $white;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    grid-template-areas:
+      "map"
+      "info";
+    grid-template-columns: 1fr;
+  }
+
+  &__form {
+    max-width: 506px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 3.8889rem;
+    margin-bottom: 47px;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    .site-title {
+      text-align: left;
+      margin-bottom: 1.5556rem;
+
+      &.line {
+        &::after {
+          max-width: 209px;
+          margin: 20px auto 0 0;
+        }
+      }
+    }
+  }
+
+  &__address {
+    font-family: ProximaNova;
+    font-size: 1rem;
+    text-align: left;
+    color: $white;
+    margin-bottom: 2.4444rem;
+    position: relative;
+    padding-left: 23px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 23px;
+      height: 23px;
+      border: solid 1px $white;
+      position: absolute;
+      left: -13px;
+      top: 8px;
+      border-radius: 50%;
+      background: url(../img/layer-26.png) no-repeat center center;
+    }
+  }
+
+  &__phone,
+  &__mail {
+    margin-bottom: 3.4444rem;
+    position: relative;
+    padding-left: 23px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 23px;
+      height: 23px;
+      border: solid 1px $white;
+      position: absolute;
+      left: -13px;
+      top: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  &__phone::before {
+    background: url(../img/layer-22.png) no-repeat center center;
+  }
+
+  &__mail::before {
+    background: url(../img/layer-24.png) no-repeat center center;
+  }
+
+  h3.site-title {
+    font-family: ProximaNovaT;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: left;
+    color: $white;
+
+    margin-bottom: 23px;
+  }
+
+  .title {
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.43;
+    text-align: left;
+    color: $white;
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__map {
+    grid-area: map;
+  }
+}
+
+#map {
+  min-height: 500px;
+}

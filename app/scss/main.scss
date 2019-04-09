@@ -1,8 +1,7 @@
-@import "./_mixins/keyframe";
 @import "vars";
 @import "fonts";
-@import "./template/extand.scss";
-@import "./component/extand.scss";
+@import "template/extand";
+@import "component/extand";
 
 html {
   font-size: 18px;
