@@ -1,27 +1,36 @@
 .site-header {
   background: url(../img/Wz3c0TobJI8.jpg) no-repeat center center / cover;
-  border-top-right-radius: 20px; 
+  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  padding-top: 30px;
+  padding-top: 1.6667rem;
+
+  @media (max-width: 768px) {
+    padding-top: 120px;
+  }
 
   &__menu {
     .menu {
       list-style: none;
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
 
       li {
-        margin-right: 30px;
+        margin-right: 1.6667rem;
 
         &:last-child {
           margin-right: 0;
         }
       }
-      
+
       a {
         text-decoration: none;
         font-family: ProximaNova;
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: normal;
         line-height: 1.89;
         color: $white;
@@ -39,47 +48,68 @@
     flex-direction: column;
     align-items: flex-end;
 
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
     .phone {
       font-family: ProximaNova;
-      font-size: 24px;
+      font-size: 1.3333rem;
       font-weight: normal;
       line-height: 1.42;
       color: $white;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .order-call {
       font-family: ProximaNova;
-      font-size: 16px;
+      font-size: 0.8889rem;
       line-height: normal;
       color: $white;
+      white-space: nowrap;
     }
 
     .mail {
       font-family: ProximaNova;
-      font-size: 14px;
+      font-size: 0.7778rem;
       line-height: 2;
       color: $white;
+      white-space: nowrap;
     }
   }
 
   &__title {
-    padding: 180px 0 200px;
+    padding: 10rem 0 11.1111rem;
     max-width: 768px;
-    font-family: ProximaNova;
-    font-size: 40px;
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 2.2222rem;
     font-weight: 300;
     line-height: 1.4;
     text-align: center;
     color: $white;
     margin: 0 auto;
+
+    p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      padding: 4.4444rem 0;
+      max-width: 100%;
+      font-size: 1.8rem;
+    }
   }
 
   .mouse {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 2.2222rem;
+
+    .arrow {
+      animation: jump 3s linear alternate infinite;
+    }
   }
 }
 
@@ -93,4 +123,26 @@
   margin: 0 auto;
   left: calc(50% - (292px / 2));
   padding-top: 30px;
+}
+
+@include keyframes(jump) {
+  0% {
+    transform: translateY(10px);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
 }
