@@ -2,10 +2,18 @@
   &__grid {
     display: grid;
     grid-template-columns: 46% 54%;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__image {
     background-color: $pale-grey;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
 
     img {
       max-width: 100%;
@@ -13,15 +21,19 @@
   }
 
   &__info {
-    padding: 25px 10px 65px;
+    padding: 1.3889rem 0.5556rem 3.6111rem;
     background-color: $pale-grey;
     background-image: url(../img/about-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
 
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+
     span {
       font-family: ProximaNova;
-      font-size: 14px;
+      font-size: 0.7778rem;
       font-weight: 300;
       color: $azul-two;
       text-transform: uppercase;
@@ -29,23 +41,38 @@
 
     .site-title {
       color: $azul;
-      padding: 0 0 0 35px;
+      padding: 0 0 0 1.9444rem;
       max-width: 500px;
-      margin: 15px 0 35px;
+      margin: 0.8333rem 0 1.9444rem;
       text-align: left;
+
+      @media (max-width: 991px) {
+        margin: 0.8333rem auto 1.9444rem;
+        text-align: center;
+      }
     }
 
     .button {
-      margin: 45px 0 0 120px;
+      margin: 2.5rem 0 0 6.6667rem;
+
+      @media (max-width: 1200px) {
+        margin: 2.5rem 0;
+        text-align: center;
+      }
     }
   }
 
   &__info-text {
     max-width: 630px;
     font-family: ProximaNova;
-    font-size: 17px;
+    font-size: 0.9444rem;
     font-weight: 300;
     line-height: 1.76;
     color: $dusk;
+
+    @media (max-width: 991px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
