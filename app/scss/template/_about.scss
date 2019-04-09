@@ -1,0 +1,51 @@
+.about {
+  &__grid {
+    display: grid;
+    grid-template-columns: 46% 54%;
+  }
+
+  &__image {
+    background-color: $pale-grey;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 25px 10px 65px;
+    background-color: $pale-grey;
+    background-image: url(../img/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    span {
+      font-family: ProximaNova;
+      font-size: 14px;
+      font-weight: 300;
+      color: $azul-two;
+      text-transform: uppercase;
+    }
+
+    .site-title {
+      color: $azul;
+      padding: 0 0 0 35px;
+      max-width: 500px;
+      margin: 15px 0 35px;
+      text-align: left;
+    }
+
+    .button {
+      margin: 45px 0 0 120px;
+    }
+  }
+
+  &__info-text {
+    max-width: 630px;
+    font-family: ProximaNova;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.76;
+    color: $dusk;
+  }
+}

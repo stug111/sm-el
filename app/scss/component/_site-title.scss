@@ -1,0 +1,25 @@
+.site-title {
+  font-family: ProximaNovaT;
+  font-size: 48px;
+  font-weight: 100;
+  color: $white-two;
+  line-height: 55px;
+  margin: 0 auto;
+  text-align: center;
+
+  &.line {
+    &::after {
+      display: block;
+      content: "";
+      width: 377px;
+      height: 3px;
+      background-color: $soft-blue-two;
+      margin: 20px auto 0;
+    }
+  }
+
+  &.line-left {
+    max-height: 115px;
+    border-left: 3px solid $soft-blue-two;
+  }
+}

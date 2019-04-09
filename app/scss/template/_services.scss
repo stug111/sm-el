@@ -1,0 +1,20 @@
+.services {
+  padding: 90px 0 130px;
+  background-color: $pale-grey;
+
+  .site-title {
+    color: $dark-indigo;
+  }
+
+  &__item {
+    display: flex;
+    
+    p {
+      font-family: ProximaNova;
+      font-size: 18px;
+      font-weight: 600;
+      color: $dark-indigo;
+      text-transform: uppercase;
+    }
+  }
+}
