@@ -11,8 +11,20 @@
   padding: 0.7778rem 2.9444rem;
   text-transform: uppercase;
   box-shadow: 0px 10px 80px rgba($azul-two, 0.6);
+  transition: all 0.15s ease-in-out;
 
   &:hover {
     background-color: $azul-button;
+  }
+
+  &.white {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $azul-two;
+
+    &:hover {
+      border: 1px solid $azul-two;
+      color: $white;
+    }
   }
 }

@@ -1,0 +1,12 @@
+.advantage {
+  padding: 5rem 0;
+  &__item {
+    text-align: center;
+    font-family: ProximaNova;
+    font-size: 1.3333rem;
+    font-weight: bold;
+    text-align: center;
+    color: $azul-two;
+    margin-bottom: 30px;
+  }
+}
