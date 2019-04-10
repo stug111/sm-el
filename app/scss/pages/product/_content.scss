@@ -1,0 +1,13 @@
+.content {
+  background-color: $pale-grey;
+  padding: 4.5rem 0;
+
+  &__text {
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.83;
+    text-align: center;
+    color: $dusk;
+  }
+}

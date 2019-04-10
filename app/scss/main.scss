@@ -5,6 +5,7 @@
 @import "pages/about/about-page";
 @import "pages/service/service-page";
 @import "pages/products/products-page";
+@import "pages/product/product-page";
 
 html {
   font-size: 18px;
@@ -35,4 +36,28 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+.breadcrumbs {
+  background-color: $pale-grey;
+  padding: 16px 0;
+}
+
+#breadcrumbs {
+  font-family: ProximaNova;
+  font-size: 13px;
+  font-weight: 300;
+  color: #000;
+
+  > span {
+    > span {
+      > span {
+        color: $azul;
+      }
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
 }

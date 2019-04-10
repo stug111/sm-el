@@ -1,0 +1,41 @@
+.product-info {
+  padding-bottom: 7rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 5rem;
+  }
+
+  &__image {
+    transform: translateY(-60px);
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    display: inline;
+    font-size: 1.2778rem;
+    line-height: 1.43;
+    color: $dark-indigo;
+    border-bottom: 1px solid $soft-blue-two;
+    padding-bottom: 3px;
+  }
+
+  &__block {
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+    color: $dusk;
+    margin-bottom: 3.3333rem;
+
+    &:first-child {
+      margin-top: 4.3889rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
