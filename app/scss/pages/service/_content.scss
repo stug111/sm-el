@@ -1,0 +1,44 @@
+.content {
+  background-color: $pale-grey;
+  padding: 4.5rem 0;
+
+  &__text {
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.83;
+    text-align: center;
+    color: $dusk;
+  }
+
+  &__item {
+    text-align: center;
+    font-family: ProximaNova;
+    font-size: 1.0556rem;
+    line-height: 1.37;
+    text-align: center;
+    margin-bottom: 30px;
+
+    a {
+      color: $azul-two;
+    }
+  }
+
+  &__image {
+    width: 211px;
+    height: 217px;
+    margin: 0 auto 59px;
+    border-radius: 24.8px;
+    border: solid 2px $soft-blue;
+    background-image: linear-gradient(to top, #dfebff, $white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 19px 50px 0 rgba(#3571d9, 0.19);
+
+    img {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
-@import "../../vars";
-@import "content";
-@import "advantage";
-@import "partner";
+.page-about {
+  @import "../../vars";
+  @import "content";
+  @import "advantage";
+  @import "partner";
+}
