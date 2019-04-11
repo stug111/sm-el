@@ -30,6 +30,7 @@ textarea {
   font-size: 0.9444rem;
   line-height: 2;
   color: $white;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -39,7 +40,7 @@ textarea {
     left: 0;
     width: 22px;
     height: 24px;
-    background: url(../../img/layer-28.png) no-repeat left center;
+    background: url(../img/layer-28.png) no-repeat left center;
   }
   padding-left: 27px;
 

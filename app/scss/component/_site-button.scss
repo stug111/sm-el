@@ -12,6 +12,7 @@
   text-transform: uppercase;
   box-shadow: 0px 10px 80px rgba($azul-two, 0.6);
   transition: all 0.15s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: $azul-button;

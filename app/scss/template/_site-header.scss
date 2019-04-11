@@ -27,6 +27,12 @@
         }
       }
 
+      li.current-menu-item {
+        a {
+          border-bottom-color: $white;
+        }
+      }
+
       a {
         text-decoration: none;
         font-family: ProximaNova;
@@ -35,9 +41,11 @@
         line-height: 1.89;
         color: $white;
         transition: all 0.15s ease-in-out;
+        border-bottom: 3px solid transparent;
 
-        &:hover {
-          border-bottom: 3px solid $white;
+        &:hover,
+        &.current-menu-item {
+          border-bottom-color: $white;
         }
       }
     }

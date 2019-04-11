@@ -59,7 +59,7 @@
       left: -13px;
       top: 8px;
       border-radius: 50%;
-      background: url(../../../img/point-blue.png) no-repeat center center;
+      background: url(../../../../../img/point-blue.png) no-repeat center center;
     }
   }
 
@@ -88,11 +88,11 @@
   }
 
   &__phone::before {
-    background: url(../../../img/phone-blue.png) no-repeat center center;
+    background: url(../../../../../img/phone-blue.png) no-repeat center center;
   }
 
   &__mail::before {
-    background: url(../../../img/mail-blue.png) no-repeat center center;
+    background: url(../../../../../img/mail-blue.png) no-repeat center center;
   }
 
   h3.site-title {
@@ -124,7 +124,7 @@
 
   .file_upload {
     &::before {
-      background-image: url(../../../img/file-blue.png);
+      background-image: url(../../../../../img/file-blue.png);
     }
     span {
       color: #000;
