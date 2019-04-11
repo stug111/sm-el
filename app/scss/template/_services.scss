@@ -1,20 +1,77 @@
 .services {
   padding: 90px 0 130px;
   background-color: $pale-grey;
+  background-image: url(../../img/services-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
 
   .site-title {
     color: $dark-indigo;
+    margin-bottom: 100px;
   }
 
-  &__item {
-    display: flex;
-    
+  &__list-item {
+    list-style: none;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding-left: 45px;
+      border: 1px solid transparent;
+      border-radius: 40px;
+
+      &:hover {
+        border: 1px solid $soft-blue;
+        border-radius: 40px;
+
+        p {
+          color: $soft-blue;
+        }
+      }
+    }
+
+    img {
+      width: 40px;
+      height: 48px;
+    }
+
     p {
       font-family: ProximaNova;
       font-size: 18px;
       font-weight: 600;
       color: $dark-indigo;
       text-transform: uppercase;
+      max-width: 185px;
+      margin-left: 40px;
+    }
+  }
+
+  &__block-info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-family: ProximaNova;
+      font-size: 34px;
+      font-weight: 300;
+      line-height: 1.24;
+      color: $dark-indigo;
+      margin: 25px 0;
+    }
+
+    span {
+      font-family: ProximaNova;
+      font-size: 17px;
+      line-height: 1.76;
+      color: $dusk;
+      margin-bottom: 40px;
     }
   }
 }
