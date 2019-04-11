@@ -15,7 +15,10 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $azul-button;
+    background-color: $white;
+    border: 1px solid $dark-indigo;
+    color: $dark-indigo;
+    box-shadow: none;
   }
 
   &.white {
